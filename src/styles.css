@@ -38,7 +38,7 @@ body {
 .product-image {
   border-radius: 10px 0 0 10px;
   height: 100%;
-  width: 330px;
+  width: 100%;
   justify-content: flex-start;
 }
 
@@ -140,5 +140,28 @@ button:hover {
 
   .product-image {
     border-radius: 10px 10px 0 0;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .container {
+    height: 100%;
+  }
+  .card {
+    flex-direction: column;
+  }
+
+  .card-content {
+    padding: 0.6em;
+  }
+
+  .product-image {
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+@media screen and (min-width: 630px) {
+  .product-image {
+    width: 330px;
   }
 }
