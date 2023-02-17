@@ -1,6 +1,7 @@
 # Frontend Mentor - Product preview card component
 
 Deploy: https://attrix182.github.io/Frontend-Mentor-Product-preview-card/
+<br />
 Challenge: https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa
 
 Screnshots:
