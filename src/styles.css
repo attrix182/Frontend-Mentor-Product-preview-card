@@ -43,6 +43,10 @@ body {
   justify-content: flex-start;
 }
 
+.card-content{
+    padding: 2em;
+}
+
 @media screen and (max-width: 375px) {
   .card {
     flex-direction: column;
