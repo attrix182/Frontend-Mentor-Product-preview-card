@@ -4,9 +4,6 @@
   --very-dark-blue: hsl(220, 13%, 18%);
   --dark-grayish-blue: hsl(228, 12%, 48%);
   --white: hsl(0, 0%, 100%);
-
-  font-family: 'Fraunces', serif;
-  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -17,6 +14,8 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  align-items: center;
+  height: 90vh;
 }
 
 .card {
@@ -26,9 +25,9 @@ body {
   border-radius: 10px;
   background-color: var(--white);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-  margin: 2rem;
-  max-width: 800px;
-  max-height: 500px;
+  margin: 1rem;
+  max-width: 660px;
+  min-height: 400px;
 }
 
 .img-container {
@@ -39,28 +38,109 @@ body {
 .product-image {
   border-radius: 10px 0 0 10px;
   height: 100%;
-  width: 100%;
+  width: 330px;
   justify-content: flex-start;
 }
 
-.card-content{
-    padding: 2em;
+.product-description {
+  font-size: 14px;
+  color: var(--dark-grayish-blue);
+  font-weight: 250;
+  font-family: Montserrat;
+  line-height: 22px;
+}
+
+.product-price {
+  color: var(--dark-cyan);
+  font-size: 2em;
+  font-weight: 700;
+  font-family: Fraunces;
+}
+
+.product-price-discount {
+  color: var(--dark-grayish-blue);
+  text-decoration: line-through;
+  font-weight: 250;
+}
+
+.card-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.8em;
+}
+
+.card-content {
+  padding: 2.5em;
+}
+
+.product-tag {
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  color: var(--dark-grayish-blue);
+  font-weight: 250;
+  margin: 5px 0 20px 0;
+  font-family: Montserrat;
+}
+
+.product-title {
+  font-size: 32px;
+  color: var(--very-dark-blue);
+  font-family: Fraunces;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-add-cart {
+  margin-top: 35px;
+  font-size: 1.2em;
+  font-family: Montserrat;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--dark-cyan);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 18px;
+}
+
+button:hover {
+    background: rgb(38, 69, 58);
+
+ 
+  cursor: pointer;
+}
+
+.attribution {
+  bottom: 2vh;
+  font-size: 11px;
+  text-align: center;
+  margin: auto;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 @media screen and (max-width: 375px) {
+  .container {
+    height: 100%;
+  }
   .card {
     flex-direction: column;
+  }
+
+  .card-content {
+    padding: 0.6em;
   }
 
   .product-image {
     border-radius: 10px 10px 0 0;
   }
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
 }
