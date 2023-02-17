@@ -1,0 +1,62 @@
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(220, 13%, 18%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+
+  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: var(--cream);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: var(--white);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  margin: 2rem;
+  max-width: 800px;
+  max-height: 500px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.product-image {
+  border-radius: 10px 0 0 10px;
+  height: 100%;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 375px) {
+  .card {
+    flex-direction: column;
+  }
+
+  .product-image {
+    border-radius: 10px 10px 0 0;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

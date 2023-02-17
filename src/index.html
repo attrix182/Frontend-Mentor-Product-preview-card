@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body>
+    <section class="container">
+      <article class="card">
+        <div class="img-container">
+          <picture>
+            <source media="(max-width: 375px)" srcset="../images/image-product-mobile.jpg" />
+            <source media="(min-width: 1440px)" srcset="../images/image-product-desktop.jpg" />
+            <img src="../images/image-product-desktop.jpg" class="product-image" alt="Perfum image" />
+          </picture>
+        </div>
+        <div class="card-content">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of
+          CHANEL. $149.99 $169.99 Add to Cart
+        </div>
+      </article>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://sinisterraluciano.com.ar/">Sinisterra Luciano</a>.
+    </div>
+  </body>
+</html>
